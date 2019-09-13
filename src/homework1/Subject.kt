@@ -1,7 +1,9 @@
 package homework1
 
+//Subject Interface
+
 interface Subject {
-    fun registerObserver()
-    fun removeObserver()
+    fun registerObserver(p : Publisher)
+    fun removeObserver(p : Publisher)
     fun notifyObserver()
 }
