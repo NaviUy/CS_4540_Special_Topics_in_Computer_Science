@@ -6,6 +6,8 @@ class Subscriber() : Observer {
         println("Look new update: $newUpdate")
     }
 
+    //delegation
+
     fun subscribe(s : Subject) {
         s.registerObserver()
     }
