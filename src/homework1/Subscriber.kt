@@ -1,6 +1,7 @@
 package homework1
 
 //Subscriber Class that implements Observer
+//Subscriber holds and instance of Subject
 
 class Subscriber(s : Subject) : Observer {
 
@@ -11,12 +12,12 @@ class Subscriber(s : Subject) : Observer {
     //delegating subscribe and unsubscribe to a instance of subject
     //takes publisher in its constructor
 
-    fun subscribe(p : Publisher) {
-        s.registerObserver(p)
+    fun subscribe(publisher : String) {
+        s.registerObserver(publisher)
     }
 
-    fun unsubscribe(p : Publisher) {
-        s.removeObserver(p)
+    fun unsubscribe(publisher : String) {
+        s.removeObserver(publisher)
     }
 
     fun printNewsLetter(newsletter: String){
