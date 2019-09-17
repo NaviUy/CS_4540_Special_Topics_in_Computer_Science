@@ -3,7 +3,7 @@ package homework1
 //Subject Interface
 
 interface Subject {
-    fun registerObserver(publisher : String)
-    fun removeObserver(publisher : String)
+    fun registerObserver(p: String)
+    fun removeObserver(p: String)
     fun notifyObserver()
 }

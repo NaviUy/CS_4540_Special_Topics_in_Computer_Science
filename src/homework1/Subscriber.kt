@@ -1,27 +1,36 @@
 package homework1
 
+//Concrete Observer
 //Subscriber Class that implements Observer
 //Subscriber holds and instance of Subject
 
-class Subscriber(s : Subject) : Observer {
+class Subscriber(publisher:String = "Default Publisher", name:String = "Default Name") : Observer, s by Subject {
 
     override fun update(newUpdate: String) {
         println("Look new update: $newUpdate")
+        printNewsletter(newUpdate);
     }
 
     //delegating subscribe and unsubscribe to a instance of subject
     //takes publisher in its constructor
 
-    fun subscribe(publisher : String) {
+    fun subscribe(){
+
         s.registerObserver(publisher)
+
     }
 
-    fun unsubscribe(publisher : String) {
+    fun unsubscribe(){
+
         s.removeObserver(publisher)
+
     }
 
-    fun printNewsLetter(newsletter: String){
-        update(newsletter)
+    fun printNewsletter(s: String){
+
+        println(s)
     }
+
+
 
 }
