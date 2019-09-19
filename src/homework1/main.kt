@@ -18,6 +18,9 @@ package homework1
         hector.subscribe(ymcmb)
         letty.subscribe(ymcmb)
 
+        //works both ways
+
+
 //        ymcmb.registerObserver(mike)
 //        ymcmb.registerObserver(kevin)
 //        ymcmb.registerObserver(esmeralda)
