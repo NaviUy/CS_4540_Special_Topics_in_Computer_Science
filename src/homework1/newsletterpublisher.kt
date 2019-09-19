@@ -10,6 +10,8 @@ object newsletterpublisher: Subject {
     var x: Int = 1
 
     override fun registerObserver(s: Subscriber) {
+        val name = s.name
+        println("$name has subscribed!")
         sub.add(s)
     }
 
