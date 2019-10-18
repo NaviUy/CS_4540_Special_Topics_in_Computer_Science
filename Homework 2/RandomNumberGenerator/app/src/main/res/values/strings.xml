@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RandomNumberGenerator</string>
+    <string name="heading_get_random_number">Get a Random Number!</string>
+    <string name="without_replacement">Without Replacement</string>
+    <string name="hint_low">0</string>
+    <string name="hint_high">100</string>
+    <string name="output">0</string>
+    <string name="get_output">GET NUMBER</string>
+</resources>
