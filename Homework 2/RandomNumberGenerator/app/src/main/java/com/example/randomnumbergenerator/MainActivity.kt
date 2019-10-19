@@ -22,6 +22,15 @@ class MainActivity : AppCompatActivity() {
 
         val numbers = mutableListOf<Int>()
 
+        //handle checkmark
+
+        replacement_toggle.setOnClickListener(){
+
+            minimum.text.clear()
+            maximum.text.clear()
+
+        }
+
         //handle button
 
         get_number.setOnClickListener() {
